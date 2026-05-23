@@ -312,7 +312,7 @@
       statusEl.textContent = 'Submitting...';
       const payload = Object.fromEntries(new FormData(form).entries());
       try {
-        const response = await fetch('/join', {
+        const response = await fetch('/api/join', {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify(payload)

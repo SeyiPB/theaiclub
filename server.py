@@ -15,7 +15,7 @@ class Handler(SimpleHTTPRequestHandler):
         super().__init__(*args, directory=str(ROOT), **kwargs)
 
     def do_POST(self):
-        if self.path != '/join':
+        if self.path not in ['/join', '/api/join']:
             self.send_error(404)
             return
         length = int(self.headers.get('Content-Length', '0'))
