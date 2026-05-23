@@ -5,7 +5,7 @@ from pathlib import Path
 
 TELEGRAM_URL = "https://t.me/+0tgMl32I9foxMmNh"
 FIELDS = ["submitted_at", "first_name", "last_name", "email", "business_name", "role"]
-CSV_PATH = Path("/tmp/cornerstone_members.csv")
+CSV_PATH = Path("/tmp/aiclub_members.csv")
 
 def handler(request):
     if request.method != "POST":

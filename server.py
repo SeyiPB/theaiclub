@@ -6,7 +6,7 @@ from http.server import SimpleHTTPRequestHandler, ThreadingHTTPServer
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent
-CSV_PATH = ROOT / 'cornerstone_members.csv'
+CSV_PATH = ROOT / 'aiclub_members.csv'
 TELEGRAM_URL = 'https://t.me/+0tgMl32I9foxMmNh'
 FIELDS = ['submitted_at', 'first_name', 'last_name', 'email', 'business_name', 'role']
 
