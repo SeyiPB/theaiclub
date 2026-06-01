@@ -79,16 +79,24 @@ input:focus { border-color: var(--accent); box-shadow: 0 0 0 4px rgba(221,121,88
 .module-button.complete { border-color: rgba(47,143,99,0.35); }
 .module-kicker { display: flex; justify-content: space-between; align-items: center; gap: 10px; color: var(--muted); font-size: 0.78rem; font-weight: 800; letter-spacing: .12em; text-transform: uppercase; }
 .module-title { display: block; margin-top: 7px; font-weight: 800; line-height: 1.25; }
+.module-meta { display: block; margin-top: 8px; color: var(--muted); font-size: 0.84rem; line-height: 1.45; }
 .check-pill { color: var(--ok); font-weight: 900; }
 .lesson-player { min-height: 520px; padding: 30px; }
 .lesson-card h2 { margin: 0; font-size: clamp(2rem, 4vw, 3.7rem); line-height: 1; }
-.lesson-goal { margin: 14px 0 24px; padding: 16px; border-radius: 18px; background: var(--accent-soft); color: var(--text); }
-.lesson-section { margin-top: 24px; }
+.lesson-goal, .outcome-card { margin: 14px 0 18px; padding: 16px; border-radius: 18px; background: var(--accent-soft); color: var(--text); line-height: 1.6; }
+.outcome-card { background: rgba(47,143,99,0.11); border: 1px solid rgba(47,143,99,0.18); }
+.lesson-section { margin-top: 28px; }
 .lesson-section h3 { margin: 0 0 12px; font-size: 1.25rem; }
-.lesson-section ul { margin: 0; padding-left: 20px; color: var(--muted); line-height: 1.7; }
-.assignment-box { margin-top: 26px; padding: 20px; border-radius: 22px; background: var(--surface-strong); border: 1px solid rgba(221,121,88,0.18); }
-.assignment-box h3 { margin: 0 0 8px; }
-.assignment-box p { margin: 0; }
+.lesson-section h4 { margin: 0 0 8px; font-size: 1rem; }
+.lesson-section p { margin: 0; color: var(--muted); line-height: 1.75; }
+.lesson-section ul, .lesson-section ol { margin: 0; padding-left: 20px; color: var(--muted); line-height: 1.7; }
+.lesson-stack, .prompt-grid { display: grid; gap: 14px; }
+.mini-lesson, .prompt-card { padding: 18px; border-radius: 20px; background: rgba(255,255,255,0.78); border: 1px solid rgba(32,59,67,0.08); }
+.prompt-card pre { margin: 12px 0 0; white-space: pre-wrap; overflow-wrap: anywhere; color: #24444d; background: #fffaf5; border: 1px solid rgba(221,121,88,0.16); border-radius: 16px; padding: 14px; font-size: 0.92rem; line-height: 1.58; }
+.assignment-box, .share-box { margin-top: 26px; padding: 20px; border-radius: 22px; background: var(--surface-strong); border: 1px solid rgba(221,121,88,0.18); }
+.share-box { background: rgba(47,143,99,0.08); border-color: rgba(47,143,99,0.18); }
+.assignment-box h3, .share-box h3 { margin: 0 0 8px; }
+.assignment-box p, .share-box p { margin: 0; }
 .player-actions { display: flex; gap: 12px; flex-wrap: wrap; margin-top: 26px; }
 .player-empty { color: var(--muted); }
 .footer { border-top: 1px solid rgba(32,59,67,0.08); background: rgba(252,250,247,0.92); backdrop-filter: blur(8px); }
