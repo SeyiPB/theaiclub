@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AI Club Starter Course | The AI Club</title>
+  <meta name="description" content="A 6-week self-paced starter course for small business owners to use AI to save time, market better, and grow their business." />
+  <meta name="robots" content="index,follow" />
+  <link rel="canonical" href="https://www.theaiclub.cc/course.html" />
+  <link rel="icon" type="image/png" href="/assets/favicon.png" />
+  <meta property="og:title" content="AI Club Starter Course" />
+  <meta property="og:description" content="Use AI to save time, market better, and grow your business. No email, password, or backend account required." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://www.theaiclub.cc/course.html" />
+  <meta property="og:image" content="https://www.theaiclub.cc/assets/aiclub-logo-transparent.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/course.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="container topbar-inner">
+      <a class="brand" href="/" aria-label="AI Club home">
+        <img class="brand-logo" src="/assets/aiclub-logo.png" alt="AI Club logo" />
+      </a>
+      <nav class="topnav" aria-label="Course navigation">
+        <a href="/signup.html">Join community</a>
+        <button class="link-button" id="changeUserBtn" type="button" hidden>Change username</button>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="setup-screen" id="setupScreen" hidden>
+      <div class="container setup-card">
+        <div>
+          <div class="eyebrow">No email. No password. Just start.</div>
+          <h1>Create your course username</h1>
+          <p>Pick a name for your local course dashboard. Your progress stays on this browser using localStorage.</p>
+        </div>
+        <form class="username-form" id="usernameForm">
+          <label for="usernameInput">Display name / username</label>
+          <input id="usernameInput" name="username" type="text" minlength="2" maxlength="32" placeholder="e.g. AdaFoods" autocomplete="nickname" required />
+          <button class="btn btn-primary" type="submit">Start the course</button>
+          <p class="microcopy">Responsible use: verify AI outputs, avoid sharing sensitive customer data, and review before sending anything.</p>
+        </form>
+      </div>
+    </section>
+
+    <section class="course-shell" id="courseApp" hidden>
+      <div class="container">
+        <section class="course-hero">
+          <div class="hero-copy-block">
+            <div class="eyebrow">6 weeks self-paced · 60–90 mins/week</div>
+            <h1>AI Club Starter Course: <span>Use AI to Save Time, Market Better, and Grow Your Business</span></h1>
+            <p>For small business owners, future owners, and operators. Final outcome: build one working AI workflow for your business.</p>
+            <div class="hero-actions">
+              <button class="btn btn-primary" id="continueBtn" type="button">Continue course</button>
+              <button class="btn btn-secondary" id="resetProgressBtn" type="button">Reset progress</button>
+            </div>
+          </div>
+          <aside class="progress-card" aria-live="polite">
+            <p class="welcome" id="welcomeText">Welcome back</p>
+            <div class="progress-number"><span id="progressPercent">0</span>%</div>
+            <div class="progress-track" aria-label="Course progress"><div id="progressBar"></div></div>
+            <p id="progressSummary">0 of 6 modules complete</p>
+          </aside>
+        </section>
+
+        <section class="reminder-strip" aria-label="Responsible AI reminders">
+          <strong>Responsible AI reminders:</strong>
+          <span>Verify AI outputs.</span>
+          <span>Do not paste sensitive customer or payment data.</span>
+          <span>Human review before sending.</span>
+        </section>
+
+        <section class="completion-card" id="completionCard" hidden>
+          <div class="certificate-mark">✓</div>
+          <div>
+            <p class="eyebrow">Certificate-style completion</p>
+            <h2>Congratulations, <span id="certificateName"></span>.</h2>
+            <p>You completed the AI Club Starter Course and built the foundation for your AI Business System.</p>
+          </div>
+        </section>
+
+        <div class="content-grid">
+          <aside class="module-list" aria-label="Course modules">
+            <div class="module-list-header">
+              <h2>Modules</h2>
+              <p>Mark each module complete after finishing the lessons and assignment.</p>
+            </div>
+            <div id="moduleNav"></div>
+          </aside>
+
+          <section class="lesson-player" id="lessonPlayer" aria-live="polite">
+            <div class="player-empty">Loading course...</div>
+          </section>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-row">
+      <div class="footer-copy">© 2026 The AI Club. All rights reserved.</div>
+      <a class="footer-email" href="/">theaiclub.cc</a>
+    </div>
+  </footer>
+
+  <script src="/course.js"></script>
+</body>
+</html>

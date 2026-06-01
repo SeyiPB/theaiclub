@@ -80,6 +80,8 @@
     .btn { display: inline-flex; align-items: center; justify-content: center; min-width: 220px; border-radius: 999px; padding: 16px 28px; font-size: 1rem; font-weight: 600; transition: transform .18s ease, background .18s ease; border: 0; cursor: pointer; }
     .btn-primary { background: var(--text); color: #fff; box-shadow: 0 16px 32px rgba(32,59,67,0.12); }
     .btn-primary:hover { background: #152d34; transform: translateY(-2px); }
+    .btn-secondary { background: rgba(255,255,255,0.72); color: var(--text); border: 1px solid rgba(32,59,67,0.14); box-shadow: none; }
+    .btn-secondary:hover { border-color: var(--accent); color: var(--accent); transform: translateY(-2px); }
     .hero-meta { display: flex; justify-content: center; gap: 22px; flex-wrap: wrap; margin-top: 60px; color: #96a8af; font-size: 0.86rem; letter-spacing: 0.16em; text-transform: uppercase; }
     .hero-meta span::after { content: '•'; margin-left: 22px; }
     .hero-meta span:last-child::after { content: ''; margin: 0; }
@@ -121,6 +123,7 @@
         <p class="hero-copy">AI Club is a free AI community for current and future small business owners. Learn practical ways to use AI tools in your business, save time, work smarter, and grow.</p>
         <div class="hero-actions" aria-label="Primary call to action">
           <a class="btn btn-primary" href="/signup.html">Join AI Club</a>
+          <a class="btn btn-secondary" href="/course.html">Start Free Course</a>
         </div>
         <div class="hero-meta" aria-label="Key site benefits">
           <span>AI for small business owners</span>
