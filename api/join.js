@@ -41,7 +41,7 @@ module.exports = function handler(req, res) {
     role: String(payload.role || '').trim(),
   };
 
-  if (!row.first_name || !row.last_name || !row.email || !row.business_name || !row.role) {
+  if (!row.first_name || !row.last_name || !row.email || !row.role) {
     res.status(400).json({ ok: false, error: 'Missing required fields' });
     return;
   }
